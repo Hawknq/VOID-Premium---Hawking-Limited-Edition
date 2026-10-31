@@ -9,7 +9,7 @@
 
 <p align="center">
   <img alt="Platform" src="https://img.shields.io/badge/platform-Windows-0b0f16?style=for-the-badge&logo=windows&logoColor=white">
-  <img alt="Sürüm" src="https://img.shields.io/badge/sürüm-1.9.4-f33b46?style=for-the-badge">
+  <img alt="Sürüm" src="https://img.shields.io/badge/sürüm-1.10.0-f33b46?style=for-the-badge">
   <img alt="ffmpeg" src="https://img.shields.io/badge/ffmpeg-dahil-0b0f16?style=for-the-badge&logo=ffmpeg&logoColor=white">
   <img alt="Lisans" src="https://img.shields.io/badge/lisans-MIT-f33b46?style=for-the-badge">
 </p>
@@ -37,7 +37,7 @@
 - **Klip ve VOD indirme:** Kick linkini yapıştır ya da bir kanalı aç, istediğini seç.
 - **Kalite seçimi:** Kaynağın tüm kaliteleri (1080p60, 720p60, 480p…) düşükten yükseğe sıralı ve her biri için **tahmini boyut**.
 - **4K 60 / 2K 60 / 1080p60 yükseltme:** Kick'in sunduğundan yüksek çıktı (gerçek detay eklemez, bunu uygulama da belirtir).
-- **Kısa video (TikTok · YouTube Shorts · Reels):** 1080×1920 veya 720×1280 dikey çıktı, *bulanık arka plan* ya da *ortadan kırp*.
+- **Kısa video (TikTok · YouTube Shorts · Reels):** 1080×1920 veya 720×1280 dikey çıktı, *bulanık arka plan* ya da *kırp* (sol – orta – sağ konumu sen seçersin). Aynı bölümden aralığı **GIF** olarak da kaydedebilirsin.
 - **Uygulama içinde izle:** Klipleri ve VOD'ları indirmeden önce oynatıcıda izle.
 - **Bölüm kırpma:** Videonun yalnızca istediğin aralığını indir; önizlemede o anı başlangıç/bitiş yap, kareyi PNG kaydet.
 - **Kanal tarayıcı:** Tarih, süre, izlenme ve "en çok izlenen N" filtreleri, toplu seçim, "tüm klipleri indir".
@@ -45,6 +45,7 @@
 - **Pano algılama ve sürükle-bırak:** Kick linki kopyalayınca ya da pencereye bırakınca analiz önerir.
 - **Arka planda çalışma:** Sistem tepsisi, Windows ile başlatma, bitince bildirim.
 - **İndirme geçmişi:** Arama, klasörde göster, tekrar indir.
+- **Dosya adı şablonu, güncelleme bildirimi ve hata raporu:** Ayarlardan dosya adını kendin belirle, yeni sürüm çıkınca haber al, sorun olursa tek tıkla rapor kopyala.
 - **Yazı boyutu ayarı** ve koyu, sade **VOID** tasarımı.
 - ffmpeg uygulamanın içinde gelir, ayrıca kurman gerekmez.
 
