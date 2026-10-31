@@ -1,0 +1,61 @@
+{
+  "name": "void-clipper",
+  "version": "1.9.3",
+  "description": "VOID Premium - Kick klip, VOD ve HLS indirici",
+  "author": "VOID Premium",
+  "license": "MIT",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test \"tests/*.test.js\"",
+    "dist": "electron-builder --win nsis --x64 --publish never",
+    "pack:win": "electron-builder --win dir --x64 --publish never -c.win.signAndEditExecutable=false && node scripts/set-icon.js"
+  },
+  "dependencies": {
+    "ffmpeg-static": "^5.2.0"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
+    "resedit": "^3.1.0"
+  },
+  "build": {
+    "appId": "space.hawkingunion.voidclipper",
+    "productName": "VOID Premium",
+    "artifactName": "VOID-Premium-Setup-${version}.${ext}",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "src/**/*",
+      "build/icon.png",
+      "package.json"
+    ],
+    "asarUnpack": [
+      "node_modules/ffmpeg-static/**"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "VOID Premium",
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "language": "1055"
+    }
+  }
+}
