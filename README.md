@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/banner.png" alt="VOID Premium" width="100%">
+  <img src="images/banner.png" alt="VOID Premium" width="100%">
 </p>
 
 <p align="center">
@@ -9,16 +9,13 @@
 
 <p align="center">
   <img alt="Platform" src="https://img.shields.io/badge/platform-Windows-0b0f16?style=for-the-badge&logo=windows&logoColor=white">
-  <img alt="Electron" src="https://img.shields.io/badge/Electron-33-f33b46?style=for-the-badge&logo=electron&logoColor=white">
+  <img alt="Sürüm" src="https://img.shields.io/badge/sürüm-1.9.4-f33b46?style=for-the-badge">
   <img alt="ffmpeg" src="https://img.shields.io/badge/ffmpeg-dahil-0b0f16?style=for-the-badge&logo=ffmpeg&logoColor=white">
   <img alt="Lisans" src="https://img.shields.io/badge/lisans-MIT-f33b46?style=for-the-badge">
 </p>
 
 <p align="center">
-  <a href="../../releases"><b>⬇ İndir</b></a> ·
-  <a href="docs/KULLANIM.md">Kullanım kılavuzu</a> ·
-  <a href="CHANGELOG.md">Sürüm geçmişi</a> ·
-  <a href="../../issues">Sorun bildir</a>
+  <a href="VOID-Premium-Setup.zip"><b>⬇ Kurulum dosyasını indir (VOID-Premium-Setup.zip)</b></a>
 </p>
 
 ---
@@ -27,11 +24,11 @@
 
 | Ana sayfa | Kanal tarayıcı |
 | --- | --- |
-| ![Ana sayfa](docs/screenshots/01-ana-sayfa.png) | ![Kanal tarayıcı](docs/screenshots/02-kanal-tarayici.png) |
+| ![Ana sayfa](images/01-ana-sayfa.png) | ![Kanal tarayıcı](images/02-kanal-tarayici.png) |
 
 | Kalite ve dikey format | Ayarlar |
 | --- | --- |
-| ![Kalite ve dikey format](docs/screenshots/03-kalite-ve-dikey.png) | ![Ayarlar](docs/screenshots/04-ayarlar.png) |
+| ![Kalite ve dikey format](images/03-kalite-ve-dikey.png) | ![Ayarlar](images/04-ayarlar.png) |
 
 > Ekran görüntülerindeki başlıklar ve küçük resimler örnek veridir.
 
@@ -53,20 +50,24 @@
 
 ## Kurulum
 
-1. [Releases](../../releases) sayfasından `VOID-Premium-Setup-x.y.z.exe` dosyasını indir.
-2. Çift tıkla ve kurulum sihirbazını izle (yönetici izni gerekmez).
-3. Windows SmartScreen uyarısı çıkarsa **Ek bilgi → Yine de çalıştır** de. Uygulama henüz kod imzalı değildir, bu yüzden Windows tanımadığı bir yayımcı olarak gösterir.
+1. [VOID-Premium-Setup.zip](VOID-Premium-Setup.zip) dosyasını indir ve zip'ten çıkar.
+2. `VOID-Premium-Setup-x.y.z.exe` dosyasını çalıştır, sihirbazı izle (yönetici izni gerekmez).
+3. Windows SmartScreen uyarısı çıkarsa **Ek bilgi → Yine de çalıştır** de. Uygulama henüz kod imzalı değildir, bu yüzden Windows yayımcıyı tanımaz.
 4. Masaüstündeki **VOID Premium** kısayolundan aç.
 
 **Güncelleme:** Yeni sürümün kurulum dosyasını eskisinin üzerine kurman yeterli. Ayarların ve geçmişin korunur.
 
-## Hızlı başlangıç
+## Kullanım
 
 1. Kick klip veya VOD linkini yapıştır → **Analiz Et**.
-2. **İndir**'e bas, açılan panelden kaliteyi seç (isteğe bağlı: bölüm kırp, dikey format).
-3. **Kuyruğa ekle**. İlerleme sağdaki kuyrukta görünür.
+2. **İndir**'e bas, açılan panelden kaliteyi seç. İstersen *Kısa video* bölümünden dikey format, *Bölüm* alanından kırpma seç.
+3. **Kuyruğa ekle**. İlerleme, hız ve kalan süre sağdaki kuyrukta görünür.
+4. Bir kanalın tüm içeriğine bakmak için **Kanal Tarayıcı** sekmesinde kanal adını yaz (örn. `hawking`).
 
-Tüm ayrıntılar için [kullanım kılavuzuna](docs/KULLANIM.md) bak.
+İpuçları:
+- **İzle** düğmesi klibi indirmeden uygulama içinde oynatır.
+- Pencere açıkken bir Kick linki kopyalarsan uygulama "Panoda Kick linki var" diye sorar.
+- Pencereyi kapatınca uygulama tepside çalışmaya devam eder; tamamen çıkmak için tepsi simgesine sağ tıkla → **Çıkış**.
 
 ## Sık sorulanlar
 
@@ -91,49 +92,18 @@ Hayır. Yalnızca herkese açık içerikler indirilir.
 <details>
 <summary><b>Antivirüs dosyayı karantinaya aldı</b></summary>
 
-İmzasız `.exe` dosyaları bazen yanlış pozitif verir. Dosyanın SHA256 değerini sürümle gelen `SHA256.txt` ile karşılaştırabilir, istisna ekleyebilirsin.
-</details>
-
-## Geliştirme
-
-```bash
-npm install
-npm start        # uygulamayı aç
-npm test         # birim testleri
-npm run dist     # Windows kurulum dosyası (dist/ klasörüne; Windows gerekir)
-```
-
-GitHub'da derlemek için: depoya push et, **Actions → Build VOID Premium → Run workflow** (ya da `v1.0.0` gibi bir etiket at). Kurulum dosyası **Artifacts** altında, etiketle tetiklediysen **Releases**'te çıkar.
-
-Linux'ta wine olmadan kurulum dosyası üretmek için [kullanım kılavuzundaki](docs/KULLANIM.md#linuxta-installer-üretmek-wine-gerekmez) adımlara bak.
-
-<details>
-<summary>Proje yapısı</summary>
-
-```
-src/main/        Electron ana süreç
-  main.js        pencere, tepsi, IPC, Kick isteklerini yapan gizli Chromium penceresi
-  kick.js        link çözümleme + Kick API istemcisi
-  hls.js         m3u8 çözümleme, kalite seçimi
-  queue.js       kalıcı, öncelikli, paralel kuyruk
-  downloader.js  ffmpeg ile HLS/mp4 indirme, yükseltme ve dikey çıktı
-  probe.js       kalite ve boyut tahmini
-  mediaproxy.js  uygulama içi oynatıcı için medya aktarıcı
-  frames.js      önizleme ve küçük resim kareleri
-src/renderer/    arayüz (HTML/CSS/JS)
-src/shared/      arayüz ve testlerin ortak kodu
-build/           kurulum betiği ve görseller
-tests/           node:test testleri
-```
+İmzasız `.exe` dosyaları bazen yanlış pozitif verir. İstisna ekleyebilirsin.
 </details>
 
 ## Notlar
 
-- Kick'in resmî olmayan `kick.com/api/...` uçları kullanılır; Kick bunları değiştirirse `src/main/kick.js` güncellenmelidir.
-- İstekler Cloudflare'i geçebilmek için uygulamanın içindeki gerçek bir Chromium penceresi üzerinden yapılır.
 - Yalnızca kendi içeriğini veya indirme iznin olan içerikleri indir; telif ve Kick kullanım koşullarına uymak sana aittir.
 - VOID Premium, Kick ile bağlantılı veya Kick tarafından onaylanmış bir ürün değildir.
 
+## Üçüncü taraf bileşenler
+
+Kurulum paketi şu açık kaynak bileşenleri içerir: [Electron](https://www.electronjs.org/) (MIT), [ffmpeg](https://ffmpeg.org/) ikilisi ([ffmpeg-static](https://github.com/eugeneware/ffmpeg-static) üzerinden, GPL-3.0-or-later; kaynak kodu ffmpeg.org'dadır), [hls.js](https://github.com/video-dev/hls.js) (Apache-2.0).
+
 ## Lisans
 
-[MIT](LICENSE) lisansı. Üçüncü taraf bileşenler için [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) dosyasına bak.
+[MIT](LICENSE)
