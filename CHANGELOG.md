@@ -1,5 +1,10 @@
 # Sürüm notları
 
+## v1.11.1
+- **Güncelleme tek tıkla:** Yeni sürüm bulununca kurulum dosyası arka planda kendiliğinden indirilir ve doğrulanır (Ayarlar'dan kapatılabilir). Üstteki çubukta "Şimdi kur" çıkar; basınca GitHub'a gitmeden hemen kurulur. Çubukta artık GitHub'a yönlendiren düğme yok, yalnızca otomatik kurulum başarısız olursa yedek olarak görünür.
+- Sürüm kontrolü açılıştan 8 saniye sonra ve her 6 saatte bir yapılır.
+- Not: Güncelleme düğmesi v1.11.0 ile geldi; 1.10.0 ve öncesini kullananlar bu sürüme bir kez elle geçer.
+
 ## v1.11.0
 - **YouTube sekmesi:** YouTube, youtu.be ve Shorts bağlantısından video indir. Kaliteyi (144p'den 4K'ya, kaynakta ne varsa) ve tahmini boyutu görerek seç; MP4 ya da yalnızca ses (MP3). "Uyumlu format" açıkken mümkün olduğunda H.264/AAC seçilir, kapatırsan en yüksek kalite alınır.
   - YouTube için gereken araçlar (yt-dlp ve Deno) ilk kullanımda GitHub'dan indirilir, sağlama toplamı doğrulanır; kurulum dosyası büyümez. yt-dlp haftada bir kendini günceller.

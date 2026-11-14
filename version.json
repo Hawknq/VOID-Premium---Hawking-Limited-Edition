@@ -1,5 +1,5 @@
 {
-  "version": "1.11.0",
-  "notes": "YouTube indirme sekmesi ve uygulama içinden güncelleme.",
-  "sha256": "f92727e3999597df84bef2933ab482071173a8386bfec682b72e2ba216ce9828"
+  "version": "1.11.1",
+  "notes": "Güncelleme arka planda indirilir, Şimdi kur ile tek tıkla kurulur.",
+  "sha256": "191f635b45229d9352b99ac5ef7d0aa0d1ceff9ace9a981fed7226190c81ef9d"
 }
