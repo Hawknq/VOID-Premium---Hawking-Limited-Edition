@@ -1,5 +1,11 @@
 # Sürüm notları
 
+## v1.12.0
+- **Başlangıç ekranı:** Uygulama artık burada açılır. Bağlantıyı yapıştırınca Kick mi YouTube mı olduğunu anlayıp doğru bölüme geçer; kategori kartları (Kick, Kanal Tarayıcı, YouTube, Geçmiş, Ayarlar, Hakkında), özet sayılar (toplam/Kick/YouTube indirme, kuyruk, boş disk) ve son 5 indirme görünür. Eski "Ana Sayfa" artık "Kick İndir". Logoya tıklayınca da buraya dönülür.
+- **YouTube geçmişi:** YouTube indirmeleri geçmişe kaydedilir (başlık, kanal, kalite, boyut). Geçmiş sayfasında Tümü / Kick / YouTube filtresi vardır; "Geçmişi temizle" seçili türü siler, indirilen dosyalara dokunmaz. YouTube kaydında "Tekrar indir" videoyu YouTube sekmesinde yeniden açar.
+- **Pano ve sürükle-bırak:** YouTube bağlantıları da algılanır; çubuktaki düğme doğru sekmeye götürür.
+- **Kısayollar:** Ctrl+1 … Ctrl+7 ile sekmeler arasında geçiş.
+
 ## v1.11.1
 - **Güncelleme tek tıkla:** Yeni sürüm bulununca kurulum dosyası arka planda kendiliğinden indirilir ve doğrulanır (Ayarlar'dan kapatılabilir). Üstteki çubukta "Şimdi kur" çıkar; basınca GitHub'a gitmeden hemen kurulur. Çubukta artık GitHub'a yönlendiren düğme yok, yalnızca otomatik kurulum başarısız olursa yedek olarak görünür.
 - Sürüm kontrolü açılıştan 8 saniye sonra ve her 6 saatte bir yapılır.

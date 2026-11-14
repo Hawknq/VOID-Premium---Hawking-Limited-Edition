@@ -1,5 +1,5 @@
 {
-  "version": "1.11.1",
-  "notes": "Güncelleme arka planda indirilir, Şimdi kur ile tek tıkla kurulur.",
-  "sha256": "191f635b45229d9352b99ac5ef7d0aa0d1ceff9ace9a981fed7226190c81ef9d"
+  "version": "1.12.0",
+  "notes": "Başlangıç ekranı, YouTube geçmişi ve kısayollar.",
+  "sha256": "40edf90255d9a4f0293a4d2836270081e3c9fffbbccfaf0dba152b70cb6d8c21"
 }

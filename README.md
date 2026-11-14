@@ -9,7 +9,7 @@
 
 <p align="center">
   <img alt="Platform" src="https://img.shields.io/badge/platform-Windows-0b0f16?style=for-the-badge&logo=windows&logoColor=white">
-  <img alt="Sürüm" src="https://img.shields.io/badge/sürüm-1.11.1-f33b46?style=for-the-badge">
+  <img alt="Sürüm" src="https://img.shields.io/badge/sürüm-1.12.0-f33b46?style=for-the-badge">
   <img alt="ffmpeg" src="https://img.shields.io/badge/ffmpeg-dahil-0b0f16?style=for-the-badge&logo=ffmpeg&logoColor=white">
   <img alt="Lisans" src="https://img.shields.io/badge/lisans-MIT-f33b46?style=for-the-badge">
 </p>
@@ -43,10 +43,11 @@
 - **Uygulama içinde izle:** Klipleri ve VOD'ları indirmeden önce oynatıcıda izle.
 - **Bölüm kırpma:** Videonun yalnızca istediğin aralığını indir; önizlemede o anı başlangıç/bitiş yap, kareyi PNG kaydet.
 - **Kanal tarayıcı:** Tarih, süre, izlenme ve "en çok izlenen N" filtreleri, toplu seçim, "tüm klipleri indir".
+- **Başlangıç ekranı:** Bağlantıyı yapıştır, Kick mi YouTube mı olduğunu anlayıp doğru yere götürsün; kategori kartları, özet sayılar ve son indirmeler tek ekranda.
 - **Kalıcı kuyruk:** Paralel indirme (1–8), öncelik, duraklat/iptal/tekrar dene, hız sınırı; uygulamayı kapatsan da kaldığı yerden sürer.
 - **Pano algılama ve sürükle-bırak:** Kick linki kopyalayınca ya da pencereye bırakınca analiz önerir.
 - **Arka planda çalışma:** Sistem tepsisi, Windows ile başlatma, bitince bildirim.
-- **İndirme geçmişi:** Arama, klasörde göster, tekrar indir.
+- **İndirme geçmişi:** Kick ve YouTube için ayrı filtre ve ayrı temizleme, arama, klasörde göster, tekrar indir.
 - **Dosya adı şablonu, güncelleme bildirimi ve hata raporu:** Ayarlardan dosya adını kendin belirle, yeni sürüm çıkınca haber al, sorun olursa tek tıkla rapor kopyala.
 - **Yazı boyutu ayarı** ve koyu, sade **VOID** tasarımı.
 - ffmpeg uygulamanın içinde gelir, ayrıca kurman gerekmez.
