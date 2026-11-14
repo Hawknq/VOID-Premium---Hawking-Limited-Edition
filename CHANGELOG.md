@@ -1,5 +1,10 @@
 # Sürüm notları
 
+## v1.11.0
+- **YouTube sekmesi:** YouTube, youtu.be ve Shorts bağlantısından video indir. Kaliteyi (144p'den 4K'ya, kaynakta ne varsa) ve tahmini boyutu görerek seç; MP4 ya da yalnızca ses (MP3). "Uyumlu format" açıkken mümkün olduğunda H.264/AAC seçilir, kapatırsan en yüksek kalite alınır.
+  - YouTube için gereken araçlar (yt-dlp ve Deno) ilk kullanımda GitHub'dan indirilir, sağlama toplamı doğrulanır; kurulum dosyası büyümez. yt-dlp haftada bir kendini günceller.
+- **Uygulama içinden güncelleme:** Yeni sürüm bildiriminde "Şimdi güncelle" düğmesi gelir. Zip indirilir, sha256 doğrulanır, kurulum otomatik açılır; uyuşmazsa hiçbir şey çalıştırılmaz.
+
 ## v1.10.0
 - **Dikey videoda kırpma konumu:** "Kırp" modunda artık hangi bölgenin kalacağını sol – orta – sağ kaydırıcısıyla seçersin (eskiden hep ortadan kırpıyordu).
 - **GIF çıktısı:** Klip veya VOD'un seçtiğin aralığını (en çok 30 sn) 480 piksel genişlikte GIF olarak kaydeder.

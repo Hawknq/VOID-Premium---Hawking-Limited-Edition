@@ -1,4 +1,5 @@
 {
-  "version": "1.10.0",
-  "notes": "Dikey kırpma konumu, GIF, dosya adı şablonu, güncelleme kontrolü ve hata raporu."
+  "version": "1.11.0",
+  "notes": "YouTube indirme sekmesi ve uygulama içinden güncelleme.",
+  "sha256": "f92727e3999597df84bef2933ab482071173a8386bfec682b72e2ba216ce9828"
 }
